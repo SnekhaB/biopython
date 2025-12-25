@@ -1,0 +1,67 @@
+# Section - B    Variables and DNA as Strings
+
+"""Q4.
+Write a Python program to:
+  1. Store a gene name in a variable
+  2. Store its DNA sequence in another variable
+  3. Print both values"""
+
+
+
+
+"""Q5.
+Given the DNA sequence: 'ATGCGTACGTA';
+Write a program to print:
+  1. Total number of nucleotides
+  2. First nucleotide
+  3. Last nucleotide"""
+
+dna_seq = 'ATGCGTACGTA'
+print(f"Total number of nucleotides is {len(dna_seq)}")
+print(f"First nucleotide of this DNA sequence is {dna_seq[0]}")
+print(f"Last nucleotide of this DNA sequence is {dna_seq[-1]}")
+
+
+# Section C: Working with Lists of DNA Sequences
+
+"""Q6.
+Create a list called dna_sequences containing the following sequences:
+'ATGC';
+'CGTAA';
+'TTAACG';
+Print:
+  1. The complete list
+  2. Total number of DNA sequences"""
+
+dna_sequences =['ATGC', 'CGTAA', 'TTAACG']
+print(f"The complete list is {dna_sequences}")
+print(f"Total number of DNA sequences is {len(dna_sequences)}")
+
+"""Q7.
+Using the same list, print:
+  1. The second DNA sequence
+  2. The length of the third DNA sequence"""
+
+print(f"The second DNA sequence is {dna_sequences[1]}")
+print(f"The length of the third DNA sequence {len(dna_sequences[-1])}")
+
+
+# Section D: Loops and Biological Data
+"""Q8.
+
+Write a Python program using a for loop to print each DNA sequence from the list:
+dna_sequences = ["ATGC", "CGTA", "TTAA"]"""
+
+dna_sequence = ["ATGC", "CGTA", "TTAA"]
+for dna in dna_sequence:
+  print(dna)
+
+"""Q9.
+Write a program to print each DNA sequence along with its length.
+Expected format:
+ATGC 4
+CGTA 4
+TTAA 4"""
+
+for dna_s in dna_sequence:
+  print(f"{dna_s} : {len(dna_s)}")
